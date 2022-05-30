@@ -16,4 +16,3 @@
 - (void)getHomeTimelineWithCompletion:(void(^)(NSArray *tweets, NSError *error))completion;
 
 @end
-
