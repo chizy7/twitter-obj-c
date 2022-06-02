@@ -99,27 +99,27 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQq-sy-xcd">
-                                                    <rect key="frame" x="111" y="106" width="54" height="44"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQq-sy-xcd">
+                                                    <rect key="frame" x="111" y="106" width="53.5" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="JiJ-sM-SCi"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="reply-icon"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="reply-icon"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSP-pi-OVT">
-                                                    <rect key="frame" x="199" y="105" width="54" height="46"/>
+                                                    <rect key="frame" x="198.5" y="106" width="54" height="44"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="retweet-icon" title=""/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rpls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyj-P5-dDn">
-                                                    <rect key="frame" x="162" y="117.5" width="29" height="21"/>
+                                                    <rect key="frame" x="162" y="117.5" width="28.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rtw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCY-3T-3ta">
-                                                    <rect key="frame" x="243" y="116" width="61" height="24"/>
+                                                    <rect key="frame" x="243" y="118" width="61" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="61" id="BaL-XZ-KjO"/>
                                                     </constraints>
@@ -134,7 +134,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SN7-ad-3KH">
-                                                    <rect key="frame" x="272" y="104" width="54" height="48"/>
+                                                    <rect key="frame" x="272" y="106" width="54" height="44"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="favor-icon" title=""/>
                                                 </button>
@@ -145,12 +145,12 @@
                                                 <constraint firstItem="h5B-jA-YKP" firstAttribute="top" secondItem="VoP-Ax-WHb" secondAttribute="topMargin" id="7fm-oh-9T7"/>
                                                 <constraint firstItem="vVj-ll-Hjp" firstAttribute="leading" secondItem="oCY-3T-3ta" secondAttribute="trailing" constant="18" id="8CL-kY-zxm"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="MQq-sy-xcd" secondAttribute="bottom" constant="28" id="94H-7j-HHC"/>
-                                                <constraint firstItem="SN7-ad-3KH" firstAttribute="top" secondItem="GPL-OG-1pU" secondAttribute="bottom" constant="18" id="Ad4-Dw-CgR"/>
                                                 <constraint firstItem="MQq-sy-xcd" firstAttribute="centerY" secondItem="nyj-P5-dDn" secondAttribute="centerY" id="FXN-2f-GIE"/>
                                                 <constraint firstItem="oCY-3T-3ta" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nyj-P5-dDn" secondAttribute="trailing" constant="8" symbolic="YES" id="JDD-v0-K9B"/>
                                                 <constraint firstItem="oSP-pi-OVT" firstAttribute="centerY" secondItem="oCY-3T-3ta" secondAttribute="centerY" id="L9m-hN-sft"/>
                                                 <constraint firstItem="nyj-P5-dDn" firstAttribute="leading" secondItem="VoP-Ax-WHb" secondAttribute="leading" constant="162" id="PeB-Pi-NVv"/>
                                                 <constraint firstItem="SN7-ad-3KH" firstAttribute="centerY" secondItem="oCY-3T-3ta" secondAttribute="centerY" id="PkC-AC-i9Q"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="h5B-jA-YKP" secondAttribute="bottom" constant="8" id="SCq-aw-aCS"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="waV-6a-w86" secondAttribute="trailing" constant="20" symbolic="YES" id="TUP-Zu-15r"/>
                                                 <constraint firstItem="oSP-pi-OVT" firstAttribute="leading" secondItem="nyj-P5-dDn" secondAttribute="trailing" constant="8" symbolic="YES" id="Vz8-82-ysR"/>
                                                 <constraint firstItem="MQq-sy-xcd" firstAttribute="leading" secondItem="VoP-Ax-WHb" secondAttribute="leadingMargin" constant="91" id="Wi0-uz-JX0"/>
@@ -160,8 +160,6 @@
                                                 <constraint firstAttribute="trailing" secondItem="vVj-ll-Hjp" secondAttribute="trailing" constant="60" id="gS0-tk-btS"/>
                                                 <constraint firstItem="GPL-OG-1pU" firstAttribute="top" secondItem="waV-6a-w86" secondAttribute="bottom" constant="4" id="gVc-0I-kau"/>
                                                 <constraint firstItem="GPL-OG-1pU" firstAttribute="leading" secondItem="h5B-jA-YKP" secondAttribute="trailing" constant="8" id="hmG-Rg-OtB"/>
-                                                <constraint firstItem="oCY-3T-3ta" firstAttribute="top" secondItem="GPL-OG-1pU" secondAttribute="bottom" constant="30" id="jmW-hb-2n1"/>
-                                                <constraint firstItem="oSP-pi-OVT" firstAttribute="top" secondItem="GPL-OG-1pU" secondAttribute="bottom" constant="19" id="n38-4G-96i"/>
                                                 <constraint firstItem="oSP-pi-OVT" firstAttribute="leading" secondItem="MQq-sy-xcd" secondAttribute="trailing" constant="34" id="oNG-yg-dvi"/>
                                                 <constraint firstItem="oSP-pi-OVT" firstAttribute="centerY" secondItem="nyj-P5-dDn" secondAttribute="centerY" id="qyE-F1-wFg"/>
                                                 <constraint firstItem="SN7-ad-3KH" firstAttribute="centerY" secondItem="vVj-ll-Hjp" secondAttribute="centerY" id="uBt-Yg-BGw"/>
@@ -199,11 +197,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home Timeline" id="MOc-fV-EZE">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="gdL-4e-rvU">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="PbD-4n-mS9">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PbD-4n-mS9">
                                 <rect key="frame" x="20" y="7.5" width="67" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="edit-icon"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="edit-icon"/>
                             </button>
                             <connections>
                                 <segue destination="IpZ-do-4ob" kind="presentation" identifier="composeSegue" id="5Ws-Zl-knP"/>
