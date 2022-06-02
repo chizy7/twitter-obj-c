@@ -8,6 +8,7 @@
 
 #import "TweetCell.h"
 #import "APIManager.h"
+#import "APIManager.h"
 
 @implementation TweetCell
 

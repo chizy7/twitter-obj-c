@@ -35,7 +35,6 @@
     [self getTimeline];
 }
     
-    // timeline
 - (void)getTimeline {
     [[APIManager shared] getHomeTimelineWithCompletion:^(NSArray *tweets, NSError *error) {
         if (tweets) {
@@ -50,7 +49,7 @@
         
         [self.tableView reloadData];
         
-        [self.refreshControl endRefreshing];
+       // [self.refreshControl endRefreshing];
     }];
 }
 

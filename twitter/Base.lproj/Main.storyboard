@@ -187,8 +187,12 @@
                         <viewLayoutGuide key="safeArea" id="ugE-Ul-H9I"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="UQ7-i5-6AH" firstAttribute="leading" secondItem="ugE-Ul-H9I" secondAttribute="leading" id="23P-Fe-A58"/>
+                            <constraint firstItem="UQ7-i5-6AH" firstAttribute="top" secondItem="qax-2F-Vhk" secondAttribute="top" id="IuL-Xt-HmW"/>
                             <constraint firstItem="UQ7-i5-6AH" firstAttribute="bottom" secondItem="ugE-Ul-H9I" secondAttribute="bottom" id="PLe-vT-bQj"/>
+                            <constraint firstItem="UQ7-i5-6AH" firstAttribute="bottom" secondItem="ugE-Ul-H9I" secondAttribute="bottom" id="PXN-Pw-hop"/>
                             <constraint firstItem="UQ7-i5-6AH" firstAttribute="top" secondItem="qax-2F-Vhk" secondAttribute="top" id="Y0Y-c7-RuV"/>
+                            <constraint firstItem="UQ7-i5-6AH" firstAttribute="trailing" secondItem="ugE-Ul-H9I" secondAttribute="trailing" id="bMb-Sq-xzm"/>
                             <constraint firstItem="UQ7-i5-6AH" firstAttribute="leading" secondItem="ugE-Ul-H9I" secondAttribute="leading" id="glE-TM-gEG"/>
                             <constraint firstItem="UQ7-i5-6AH" firstAttribute="trailing" secondItem="ugE-Ul-H9I" secondAttribute="trailing" id="pnQ-rO-tHZ"/>
                         </constraints>
