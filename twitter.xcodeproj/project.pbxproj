@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,9 @@
 		CFE1BCA12845813400FAB5C2 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFE1BCA02845813400FAB5C2 /* Keys.plist */; };
 		CFE1BCA42846651E00FAB5C2 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1BCA32846651E00FAB5C2 /* User.m */; };
 		CFE1BCAA28466B3F00FAB5C2 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1BCA928466B3F00FAB5C2 /* Tweet.m */; };
+		CFE1BCB028471C3100FAB5C2 /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1BCAF28471C3100FAB5C2 /* TweetCell.m */; };
+		CFE1BCB32848097D00FAB5C2 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1BCB22848097D00FAB5C2 /* ComposeViewController.m */; };
+		CFE1BCB628481D1100FAB5C2 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1BCB528481D1100FAB5C2 /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,12 @@
 		CFE1BCA32846651E00FAB5C2 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		CFE1BCA828466B3F00FAB5C2 /* Tweet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
 		CFE1BCA928466B3F00FAB5C2 /* Tweet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		CFE1BCAE28471C3100FAB5C2 /* TweetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
+		CFE1BCAF28471C3100FAB5C2 /* TweetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
+		CFE1BCB12848097D00FAB5C2 /* ComposeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		CFE1BCB22848097D00FAB5C2 /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		CFE1BCB428481D1100FAB5C2 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		CFE1BCB528481D1100FAB5C2 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +140,8 @@
 		6AD278FF20BCBF280085BC29 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CFE1BCAE28471C3100FAB5C2 /* TweetCell.h */,
+				CFE1BCAF28471C3100FAB5C2 /* TweetCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +153,10 @@
 				6AD2790520BCC0380085BC29 /* LoginViewController.m */,
 				6AD2790720BCC04D0085BC29 /* TimelineViewController.h */,
 				6AD2790820BCC04D0085BC29 /* TimelineViewController.m */,
+				CFE1BCB12848097D00FAB5C2 /* ComposeViewController.h */,
+				CFE1BCB22848097D00FAB5C2 /* ComposeViewController.m */,
+				CFE1BCB428481D1100FAB5C2 /* DetailsViewController.h */,
+				CFE1BCB528481D1100FAB5C2 /* DetailsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -166,6 +181,7 @@
 				6AD278D120BC4B950085BC29 /* Sources */,
 				6AD278D220BC4B950085BC29 /* Frameworks */,
 				6AD278D320BC4B950085BC29 /* Resources */,
+				A8B4F31B55016E0D8CA72D5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +257,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A8B4F31B55016E0D8CA72D5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-twitter/Pods-twitter-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-twitter/Pods-twitter-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-twitter/Pods-twitter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -248,8 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE1BCB028471C3100FAB5C2 /* TweetCell.m in Sources */,
 				CFE1BCAA28466B3F00FAB5C2 /* Tweet.m in Sources */,
+				CFE1BCB628481D1100FAB5C2 /* DetailsViewController.m in Sources */,
 				6AD278F320BCA6020085BC29 /* BDBOAuth1SessionManager+SFAuthenticationSession.m in Sources */,
+				CFE1BCB32848097D00FAB5C2 /* ComposeViewController.m in Sources */,
 				CFE1BCA42846651E00FAB5C2 /* User.m in Sources */,
 				6AD278E820BC4B970085BC29 /* main.m in Sources */,
 				6AD2790620BCC0380085BC29 /* LoginViewController.m in Sources */,

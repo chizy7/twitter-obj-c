@@ -47,6 +47,14 @@
         formatter.timeStyle = NSDateFormatterNoStyle;
         // Convert Date to String
         self.createdAtString = [formatter stringFromDate:date];
+        self.entities = dictionary[@"entities"];
+        if(self.entities[@"media"] != nil) {
+            self.media = self.entities[@"media"];
+        }
+        
+        if(self.entities[@"user_mentions"] != nil) {
+            self.userMentions = self.entities[@"user_mentions"];
+        }
     }
     return self;
 }
